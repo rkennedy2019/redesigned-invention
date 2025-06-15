@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stitch - Lilo & Stitch Fan App</title>
+  <style>
+    body {
+      background: #b3e0ff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    .stitch-img {
+      width: 250px;
+      margin-top: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    }
+    .quote {
+      display: none;
+      font-size: 1.2em;
+      margin: 20px auto;
+      color: #3366cc;
+      max-width: 400px;
+    }
+    button {
+      background: #3366cc;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: #254b8b;
+    }
+  </style>
+</head>
+<body>
+  <h1>Stitch - Ohana Means Family 💙</h1>
+  <img 
+    class="stitch-img" 
+    src="https://static.wikia.nocookie.net/disney/images/8/82/Profile_-_Stitch.png"
+    alt="Stitch from Lilo & Stitch"
+  >
+  <p>
+    Stitch is a mischievous, lovable alien from Disney's "Lilo & Stitch". He’s known for his blue fur, big ears, and his love for family!
+  </p>
+  <button onclick="showQuote()">Show Stitch Quote</button>
+  <div class="quote" id="quote-box">
+    "Ohana means family. Family means nobody gets left behind or forgotten."
+  </div>
+  <script>
+    function showQuote() {
+      document.getElementById('quote-box').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
